@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Connectivity Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/Connectivity" class="dashAnchor"></a>
+
+    <a title="Connectivity Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Connectivity Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BroadcastResult.html">BroadcastResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BundleContainer.html">BundleContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Connectivity.html">Connectivity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConnectivityState.html">ConnectivityState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BroadcastReceiver.html">BroadcastReceiver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Intent.html">Intent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Connectivity</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Connectivity</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Class is used to register your 3rd party app for use with the companion BLE framework.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared Instance, Singleton</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">Connectivity</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C24connectivityStateChangedSo18NSNotificationNameavpZ"></a>
+                    <a name="//apple_ref/swift/Variable/connectivityStateChanged" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C24connectivityStateChangedSo18NSNotificationNameavpZ">connectivityStateChanged</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification.Name that <em>Connectivity.state</em> has changed.
+UserInfo dictionary contains <q>state</q> of connectivity.</p>
+<pre class="highlight swift"><code><span class="kt">NotificationCenter</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addObserver</span><span class="p">(</span><span class="nv">forName</span><span class="p">:</span> <span class="kt">Connectivity</span><span class="o">.</span><span class="n">connectivityStateChanged</span><span class="p">,</span> <span class="nv">object</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="p">(</span><span class="n">notification</span><span class="p">)</span> <span class="k">in</span>
+   <span class="k">if</span> <span class="k">let</span> <span class="nv">state</span> <span class="o">=</span> <span class="n">notification</span><span class="o">.</span><span class="n">userInfo</span><span class="p">?[</span><span class="s">"state"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">ConnectivityState</span> <span class="p">{</span>
+       <span class="o">...</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">connectivityStateChanged</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C5stateAA0B5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C5stateAA0B5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State of connectivity</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/ConnectivityState.html">ConnectivityState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C11isConnectedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isConnected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C11isConnectedSbvp">isConnected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connectivity established and ready.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isConnected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C16registerReceiver12intentAction8receiverySS_AA09BroadcastD0VtF"></a>
+                    <a name="//apple_ref/swift/Method/registerReceiver(intentAction:receiver:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C16registerReceiver12intentAction8receiverySS_AA09BroadcastD0VtF">registerReceiver(intentAction:receiver:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a BroadcastReceiver with an intent action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerReceiver</span><span class="p">(</span><span class="nv">intentAction</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">receiver</span><span class="p">:</span> <span class="kt"><a href="../Structs/BroadcastReceiver.html">BroadcastReceiver</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>intentAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the intent action that you want to listen for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>receiver</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the broadcast receiver that you would like to execute when connectivity receivers intent action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C16registerReceiver12intentAction14onReceiveBlockAA09BroadcastD0VSS_yAA6IntentVctF"></a>
+                    <a name="//apple_ref/swift/Method/registerReceiver(intentAction:onReceiveBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C16registerReceiver12intentAction14onReceiveBlockAA09BroadcastD0VSS_yAA6IntentVctF">registerReceiver(intentAction:onReceiveBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a BroadcastReceiver with an intent action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerReceiver</span><span class="p">(</span><span class="nv">intentAction</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onReceiveBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Intent.html">Intent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BroadcastReceiver.html">BroadcastReceiver</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>intentAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the intent action that you want to listen for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onReceiverBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the code block to be executed when framework recieves intent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BroadcastReceiver.  Hold reference so you can stop listening.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C18unregisterReceiver12intentAction8receiverySS_AA09BroadcastD0VtF"></a>
+                    <a name="//apple_ref/swift/Method/unregisterReceiver(intentAction:receiver:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C18unregisterReceiver12intentAction8receiverySS_AA09BroadcastD0VtF">unregisterReceiver(intentAction:receiver:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UnRegister a BroadcastReceiver from an intent action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unregisterReceiver</span><span class="p">(</span><span class="nv">intentAction</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">receiver</span><span class="p">:</span> <span class="kt"><a href="../Structs/BroadcastReceiver.html">BroadcastReceiver</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>intentAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the intent action that you want to stop listen for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onReceiverBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Broadcast receiver that was listening.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C17requestConnectionyyF"></a>
+                    <a name="//apple_ref/swift/Method/requestConnection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C17requestConnectionyyF">requestConnection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request connection a to share connectivity with compaion app.  Listen for notification on the connectivity state.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    ConnectivityState
+
+</div>
+<pre class="highlight swift"><code><span class="k">if</span> <span class="n">connectivity</span><span class="o">.</span><span class="n">isConnected</span> <span class="o">==</span> <span class="kc">false</span> <span class="p">{</span>
+   <span class="n">connectivity</span><span class="o">.</span><span class="nf">requestConnection</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+   <span class="k">self</span><span class="o">.</span><span class="n">textView</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"--Connected to Blade"</span>
+<span class="p">}</span>
+
+<span class="kt">NotificationCenter</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addObserver</span><span class="p">(</span><span class="nv">forName</span><span class="p">:</span> <span class="o">.</span><span class="n">connectivityStateChanged</span><span class="p">,</span> <span class="nv">object</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">queue</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="p">(</span><span class="n">notification</span><span class="p">)</span> <span class="k">in</span>
+   <span class="k">if</span> <span class="k">let</span> <span class="nv">state</span> <span class="o">=</span> <span class="n">notification</span><span class="o">.</span><span class="n">userInfo</span><span class="p">?[</span><span class="s">"state"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">ConnectivityState</span> <span class="p">{</span>
+       <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="kt">ConnectivityState</span><span class="o">.</span><span class="n">connected</span> <span class="p">{</span>
+           <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="n">textView</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"--Connected to Blade!"</span>
+       <span class="p">}</span>
+       <span class="k">else</span> <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="kt">ConnectivityState</span><span class="o">.</span><span class="n">searchingForDevice</span> <span class="p">{</span>
+           <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="n">textView</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"--Searching for Device"</span>
+       <span class="p">}</span>
+       <span class="k">else</span> <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="kt">ConnectivityState</span><span class="o">.</span><span class="n">connecting</span> <span class="p">{</span>
+           <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="n">textView</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"--Connecting to Device"</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestConnection</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C9broadcast6intentyAA6IntentV_tF"></a>
+                    <a name="//apple_ref/swift/Method/broadcast(intent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C9broadcast6intentyAA6IntentV_tF">broadcast(intent:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast this intent to the device.</p>
+
+<p>The call is asynchronous and returns immediately.
+No results are returned from the receivers.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    <p>If you want results to be returned from the receiver then use orderedBroadcast.</p>
+
+</div>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>orderedBroadcast(callBack:)</code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">broadcast</span><span class="p">(</span><span class="nv">intent</span><span class="p">:</span> <span class="kt"><a href="../Structs/Intent.html">Intent</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C16orderedBroadcast6intent8callBackyAA6IntentV_yAA0D6ResultCctF"></a>
+                    <a name="//apple_ref/swift/Method/orderedBroadcast(intent:callBack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C16orderedBroadcast6intent8callBackyAA6IntentV_yAA0D6ResultCctF">orderedBroadcast(intent:callBack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast this intent to the device and receive data back.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">orderedBroadcast</span><span class="p">(</span><span class="nv">intent</span><span class="p">:</span> <span class="kt"><a href="../Structs/Intent.html">Intent</a></span><span class="p">,</span> <span class="nv">callBack</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../Classes/BroadcastResult.html">BroadcastResult</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callBack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>called when data is received from original broadcast. Result is of type <code><a href="../Classes/BroadcastResult.html">BroadcastResult</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17VuzixConnectivity0B0C16orderedBroadcast6intent6extras8callBackyAA6IntentV_AA15BundleContainerCSgyAA0D6ResultCctF"></a>
+                    <a name="//apple_ref/swift/Method/orderedBroadcast(intent:extras:callBack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17VuzixConnectivity0B0C16orderedBroadcast6intent6extras8callBackyAA6IntentV_AA15BundleContainerCSgyAA0D6ResultCctF">orderedBroadcast(intent:extras:callBack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast this intent to the device and receive data back.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">orderedBroadcast</span><span class="p">(</span><span class="nv">intent</span><span class="p">:</span> <span class="kt"><a href="../Structs/Intent.html">Intent</a></span><span class="p">,</span> <span class="nv">extras</span><span class="p">:</span> <span class="kt"><a href="../Classes/BundleContainer.html">BundleContainer</a></span><span class="p">?,</span> <span class="nv">callBack</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../Classes/BroadcastResult.html">BroadcastResult</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callBack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>called when data is received from original broadcast. Result is of type <code><a href="../Classes/BroadcastResult.html">BroadcastResult</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>extras</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>optional <code><a href="../Classes/BundleContainer.html">BundleContainer</a></code> of data you want to send with intent</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://www.vuzix.com/developer" target="_blank" rel="external">Vuzix</a>. All rights reserved. (Last updated: 2020-03-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
