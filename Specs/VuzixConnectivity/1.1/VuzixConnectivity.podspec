@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VuzixConnectivity"
-  s.version          = "1.0"
+  s.version          = "1.1"
   s.summary          = "Share BLE connection to your Vuzix Smart Glasses.  Bi-directional communication via BLE with your iPhone app and Vuzix smart glasses app."
   s.homepage         = "https://github.com/Vuzix/VuzixConnectivity"
   s.license          = { :type => 'Vuzix Corporation', :file => 'LICENSE' }

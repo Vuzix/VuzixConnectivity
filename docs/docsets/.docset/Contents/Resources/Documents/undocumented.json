@@ -1,6 +1,19 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/joe_martin/projects/Connectivity-iOS/Connectivity/VuzixConnectivity/wifi/WifiManager.swift",
+      "line": 15,
+      "symbol": "Notification.Name.wifiJoinFail",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/joe_martin/projects/Connectivity-iOS/Connectivity/VuzixConnectivity/wifi/WifiManager.swift",
+      "line": 16,
+      "symbol": "Notification.Name.wifiReachableChange",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/joe_martin/projects/Connectivity-iOS/Connectivity"
 }
